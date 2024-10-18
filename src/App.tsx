@@ -1,7 +1,9 @@
+import Sidenav from "./components/Sidenav";
+
 function App() {
   return (
     <div>
-      <h1 className="text-red-700">Hello world!</h1>
+      <Sidenav />
     </div>
   );
 }
