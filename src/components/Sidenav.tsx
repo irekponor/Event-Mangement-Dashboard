@@ -15,12 +15,12 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#main"
-              className="text-[#4169e1] m-2 p-3 cursor-pointer 
+              className="text-custom-color m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <AiOutlineHome size={20} />
             </a>
-            <h6 className="text-[#4169e1] font-normal">Home</h6>
+            <h6 className="text-custom-color font-normal">Home</h6>
           </div>
           <div className="flex items-center">
             <a
@@ -30,7 +30,7 @@ const Sidenav = () => {
             >
               <MdOutlineEventNote size={20} />
             </a>
-            <h6 className="font-normal">Events</h6>
+            <h6 className="font-normal text-custom-color1">Events</h6>
           </div>
           <div className="flex items-center">
             <a
@@ -40,7 +40,7 @@ const Sidenav = () => {
             >
               <GiSpeaker size={20} />
             </a>
-            <h6 className="font-normal">Speaker</h6>
+            <h6 className="font-normal text-custom-color1">Speaker</h6>
           </div>
           <div className="flex items-center">
             <a
@@ -50,7 +50,7 @@ const Sidenav = () => {
             >
               <TbReport size={20} />
             </a>
-            <h6 className="font-normal">Report</h6>
+            <h6 className="font-normal text-custom-color1">Report</h6>
           </div>
           <div className="flex items-center">
             <a
@@ -60,7 +60,7 @@ const Sidenav = () => {
             >
               <IoMdNotificationsOutline size={20} />
             </a>
-            <h6 className="font-normal">Notifications</h6>
+            <h6 className="font-normal text-custom-color1">Notifications</h6>
           </div>
           <div className="flex items-center">
             <a
@@ -70,7 +70,7 @@ const Sidenav = () => {
             >
               <IoChatbubblesOutline size={20} />
             </a>
-            <h6 className="font-normal">Messages</h6>
+            <h6 className="font-normal text-custom-color1">Messages</h6>
           </div>
           <div className="flex items-center">
             <a
@@ -80,7 +80,7 @@ const Sidenav = () => {
             >
               <CiSettings size={20} />
             </a>
-            <h6 className="font-normal">Settings</h6>
+            <h6 className="font-normal text-custom-color1">Settings</h6>
           </div>
           <div className="flex items-center pt-14">
             <a
@@ -91,8 +91,10 @@ const Sidenav = () => {
               <FaCircleUser size={20} />
             </a>
             <div className="inline-block">
-              <h6 className="font-normal">Rudra Devi</h6>
-              <h6 className="font-normal text-[#777]">rudra.devi@gmail.com</h6>
+              <h6 className="font-normal text-custom-color1">Rudra Devi</h6>
+              <h6 className="font-normal text-custom-color1 text-[#777]">
+                rudra.devi@gmail.com
+              </h6>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const Toggle = ({ handleChange, isChecked }) => {
           checked={isChecked}
         />
         <label htmlFor="check"></label>
-        <h6 className="font-normal">Dark Mode</h6>
+        <h6 className="font-normal text-custom-color1">Dark Mode</h6>
       </div>
     </div>
   );

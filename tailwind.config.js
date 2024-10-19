@@ -2,7 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      // add custom values here
+      colors: {
+        "custom-color": "var(--primary-text-color)",
+        "custom-color1": "var(--secondary-text-color)",
+      },
+    },
   },
   plugins: [],
 };
