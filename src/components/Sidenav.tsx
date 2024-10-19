@@ -15,7 +15,7 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#main"
-              className="text-[#4169e1] m-0 p-4 cursor-pointer 
+              className="text-[#4169e1] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <AiOutlineHome size={20} />
@@ -25,7 +25,7 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#work"
-              className="text-black m-0 p-4 cursor-pointer 
+              className="text-[#777] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <MdOutlineEventNote size={20} />
@@ -35,7 +35,7 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#projects"
-              className="text-black m-0 p-4 cursor-pointer 
+              className="text-[#777] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <GiSpeaker size={20} />
@@ -45,7 +45,7 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#main"
-              className="text-black m-0 p-4 cursor-pointer 
+              className="text-[#777] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <TbReport size={20} />
@@ -55,7 +55,7 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#contact"
-              className="text-black m-0 p-4 cursor-pointer 
+              className="text-[#777] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <IoMdNotificationsOutline size={20} />
@@ -65,7 +65,7 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#contact"
-              className="text-black m-0 p-4 cursor-pointer 
+              className="text-[#777] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <IoChatbubblesOutline size={20} />
@@ -75,24 +75,24 @@ const Sidenav = () => {
           <div className="flex items-center">
             <a
               href="#contact"
-              className="text-black m-0 p-4 cursor-pointer 
+              className="text-[#777] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <CiSettings size={20} />
             </a>
             <h6 className="font-normal">Settings</h6>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center pt-14">
             <a
               href="#contact"
-              className="text-black m-0 p-4 cursor-pointer 
+              className="text-[#777] m-2 p-3 cursor-pointer 
           hover:scale-125 ease-in duration-300"
             >
               <FaCircleUser size={20} />
             </a>
             <div className="inline-block">
               <h6 className="font-normal">Rudra Devi</h6>
-              <h6 className="font-normal">rudra.devi@gmail.com</h6>
+              <h6 className="font-normal text-[#777]">rudra.devi@gmail.com</h6>
             </div>
           </div>
         </div>

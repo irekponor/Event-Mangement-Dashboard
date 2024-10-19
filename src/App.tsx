@@ -7,8 +7,8 @@ function App() {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
-      <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
       <Sidenav />
+      <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
     </div>
   );
 }
