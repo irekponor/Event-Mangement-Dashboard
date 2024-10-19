@@ -6,6 +6,12 @@
     scroll-behavior: smooth;
 }
 
+@layer components {
+    .icon__wrapper{
+        @apply border rounded-full border-gray-600 w-[50px] h-[50px] grid place-items-center text-[22px]
+    }
+}
+
 :root{
     --background-color: #ffffff;
     --foreground-color: #003cff;
