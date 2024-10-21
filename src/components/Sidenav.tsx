@@ -15,6 +15,7 @@ import {
 } from "react-icons/md";
 import { TbReport } from "react-icons/tb";
 import Welcome from "./Welcome";
+import Chart from "./Chart";
 
 const Sidenav = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -184,6 +185,7 @@ const Sidenav = () => {
         </div>
       )}
       <Welcome />
+      <Chart />
     </div>
   );
 };
