@@ -6,11 +6,15 @@ import { AiOutlineHome } from "react-icons/ai";
 import { CiSettings } from "react-icons/ci";
 import { FaCircleUser } from "react-icons/fa6";
 import { GiSpeaker } from "react-icons/gi";
-import { IoIosArrowBack, IoMdNotificationsOutline } from "react-icons/io";
+import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoChatbubblesOutline } from "react-icons/io5";
 import { LiaTimesSolid } from "react-icons/lia";
-import { MdOutlineEventNote } from "react-icons/md";
+import {
+  MdOutlineEventNote,
+  MdOutlineKeyboardDoubleArrowUp,
+} from "react-icons/md";
 import { TbReport } from "react-icons/tb";
+import Welcome from "./Welcome";
 
 const Sidenav = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -41,10 +45,7 @@ const Sidenav = () => {
             </button>
           )}
           <div className="flex items-center ml-4 bg-custom-color3 rounded-sm">
-            <a
-              href="#main"
-              className="text-custom-color m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-            >
+            <a className="text-custom-color m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
               <AiOutlineHome size={20} />
             </a>
             {!isCollapsed && (
@@ -53,7 +54,6 @@ const Sidenav = () => {
           </div>
           <div className="flex items-center ml-3">
             <a
-              href="#work"
               onClick={togglePopup}
               className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
             >
@@ -64,10 +64,7 @@ const Sidenav = () => {
             )}
           </div>
           <div className="flex items-center ml-3">
-            <a
-              href="#projects"
-              className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-            >
+            <a className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
               <GiSpeaker size={20} />
             </a>
             {!isCollapsed && (
@@ -75,10 +72,7 @@ const Sidenav = () => {
             )}
           </div>
           <div className="flex items-center ml-3">
-            <a
-              href="#main"
-              className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-            >
+            <a className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
               <TbReport size={20} />
             </a>
             {!isCollapsed && (
@@ -86,10 +80,7 @@ const Sidenav = () => {
             )}
           </div>
           <div className="flex items-center ml-3">
-            <a
-              href="#contact"
-              className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-            >
+            <a className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
               <IoMdNotificationsOutline size={20} />
             </a>
             {!isCollapsed && (
@@ -102,10 +93,7 @@ const Sidenav = () => {
             )}
           </div>
           <div className="flex items-center ml-3">
-            <a
-              href="#contact"
-              className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-            >
+            <a className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
               <IoChatbubblesOutline size={20} />
             </a>
             {!isCollapsed && (
@@ -113,10 +101,7 @@ const Sidenav = () => {
             )}
           </div>
           <div className="flex items-center ml-3">
-            <a
-              href="#contact"
-              className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-            >
+            <a className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
               <CiSettings size={20} />
             </a>
             {!isCollapsed && (
@@ -125,13 +110,12 @@ const Sidenav = () => {
           </div>
           <div className="flex items-center ml-3">
             <a
-              href="#contact"
               onClick={toggleCollapse}
               className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
             >
-              <IoIosArrowBack
+              <MdOutlineKeyboardDoubleArrowUp
                 className={`transition-all duration-300 ${
-                  isCollapsed ? "-rotate-180" : "-rotate-0"
+                  isCollapsed ? "rotate-90" : "-rotate-90"
                 }`}
                 size={20}
               />
@@ -147,10 +131,7 @@ const Sidenav = () => {
             />
           )}
           <div className="flex items-center ml-3 pt-12">
-            <a
-              href="#contact"
-              className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300"
-            >
+            <a className="text-[#777] m-0 p-3 cursor-pointer hover:scale-125 ease-in duration-300">
               <FaCircleUser size={20} />
             </a>
             {!isCollapsed && (
@@ -188,7 +169,7 @@ const Sidenav = () => {
             <p> Speaker name C.</p> <p>300 Attendees</p>
           </p>
           <div className="flex mt-10 bg-custom-color4">
-            <button className="m-3 p-2 bg-white shadow-lg outline outline-1 text-black">
+            <button className="m-3 p-2 bg-white shadow-lg outline outline-1 outline-gray-200 text-black">
               Edit
             </button>
             <div className="ml-36">
@@ -202,6 +183,7 @@ const Sidenav = () => {
           </div>
         </div>
       )}
+      <Welcome />
     </div>
   );
 };
