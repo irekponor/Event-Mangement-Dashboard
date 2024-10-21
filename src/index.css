@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,6 +19,8 @@
     --foreground-color: #003cff;
     --primary-text-color: #4169e1;
     --home-bg-color: #f0f0f0;
+    --event-x-color: #ffffff;
+    --event-bg-color: #f8fafc;
     --secondary-text-color: #000000;
     --toggle-bg: #d3d3d3;
     --toggle-fg: #ffffff;
@@ -27,6 +31,8 @@
     --foreground-color: #485554;
     --primary-text-color: #ffffff;
     --home-bg-color: #4169e1;
+    --event-x-color: #ada9bb;
+    --event-bg-color: #ada9bb;
     --secondary-text-color: #ffffff;
     --toggle-bg: #4169e1;
     --toggle-fg: #ffffff;

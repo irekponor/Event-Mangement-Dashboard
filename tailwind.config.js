@@ -9,6 +9,11 @@ export default {
         "custom-color1": "var(--secondary-text-color)",
         "custom-color2": "var(--background-color)",
         "custom-color3": "var(--home-bg-color)",
+        "custom-color4": "var(--event-bg-color)",
+        "custom-color5": "var(--event-x-color)",
+      },
+      fontFamily: {
+        title: ["Inter", "sans-serif"],
       },
     },
   },

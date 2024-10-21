@@ -34,7 +34,7 @@ const Sidenav = () => {
           isCollapsed ? "w-[70px]" : "w-[280px]"
         }`}
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col font-title">
           {!isCollapsed && (
             <button className="font-medium bg-[#87ceeb] mr-24 ml-10 mb-4 p-2 mt-8 text-[#4169e1]">
               Full Logo
@@ -167,25 +167,39 @@ const Sidenav = () => {
 
       {/* Popup Component */}
       {isPopupVisible && (
-        <div className="fixed top-16 left-64 bg-custom-color2 p-4 shadow-lg rounded-lg z-50">
-          <button
-            onClick={togglePopup}
-            className="ml-[600px] p-2 bg-white shadow-lg rounded-full text-black"
-          >
-            <LiaTimesSolid />
-          </button>
-          <h3 className="font-normal text-custom-color1">Event Name</h3>
-          <p className="font-normal text-custom-color1">Event date.</p>
-          <p className="font-normal text-custom-color1">
-            3 Guest Speakers: Speaker name A, Speaker name B, Speaker name C.
-            300 Attendees
+        <div className="fixed top-16 left-64 bg-custom-color2 p-0 shadow-lg rounded-lg z-50 font-title">
+          <div className="pr-7 pt-3">
+            <button
+              onClick={togglePopup}
+              className="ml-[470px] p-1 bg-custom-color5 shadow-lg rounded-full text-black"
+            >
+              <LiaTimesSolid />
+            </button>
+          </div>
+          <h3 className="text-custom-color1 pl-4 text-[18px]">Event Name</h3>
+          <p className="font-light text-custom-color1 pl-4 text-[14px]">
+            Event Date
           </p>
-          <button
-            onClick={togglePopup}
-            className="mt-2 p-2 bg-blue-500 text-white rounded"
-          >
-            <LiaTimesSolid />
-          </button>
+          <p className="font-light text-custom-color1 pl-4 text-[14px] pt-2 mb-20">
+            Event Description
+          </p>
+          <p className="font-light text-custom-color1 pl-4 text-[14px]">
+            3 Guest Speakers: Speaker name A, Speaker name B,
+            <p> Speaker name C.</p> <p>300 Attendees</p>
+          </p>
+          <div className="flex mt-10 bg-custom-color4">
+            <button className="m-3 p-2 bg-white shadow-lg outline outline-1 text-black">
+              Edit
+            </button>
+            <div className="ml-36">
+              <button className="m-3 p-2 bg-red-500 shadow-lg text-white">
+                Delete
+              </button>
+              <button className="m-3 p-2 ml-4 bg-[#6382dd] s  hadow-lg text-white">
+                Mark as completed
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>
