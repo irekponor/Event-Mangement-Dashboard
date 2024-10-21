@@ -24,53 +24,27 @@ ChartJS.register(
 
 // Generating labels for the months
 const labels = [
-  "January",
-  "February",
-  "March",
-  "April",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
   "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
 ];
 
 const data: ChartData<"bar"> = {
   labels: labels,
   datasets: [
     {
-      data: [65, 59, 80, 81, 56, 55, 40, 73, 20, 40, 87, 47], // data
-      backgroundColor: [
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-      ],
-      borderColor: [
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-        "#8576ff",
-      ],
+      data: [620, 900, 800, 400, 989, 600, 830, 300, 810, 600, 910, 580], // data
+      backgroundColor: "#8576ff", // Simplified to a single color
+      borderColor: "#8576ff",
       borderWidth: 1,
     },
   ],
@@ -78,24 +52,53 @@ const data: ChartData<"bar"> = {
 
 const options: ChartOptions<"bar"> = {
   responsive: true,
+  aspectRatio: 2, // Adjust aspect ratio
   plugins: {
     legend: {
-      position: "top",
+      display: false, // hide legend
     },
     title: {
-      display: false,
-      text: "Event Registrations per month",
+      display: false, // hide title
+    },
+  },
+  scales: {
+    x: {
+      grid: {
+        display: true, // display grid on X-axis
+      },
+      ticks: {
+        color: "#aaa",
+      },
+    },
+    y: {
+      grid: {
+        color: "#aaa", // Customize grid color on Y-axis
+      },
+      ticks: {
+        color: "#aaa",
+        stepSize: 200, // Y-axis step size
+      },
     },
   },
 };
 
 const Chart: React.FC = () => {
   return (
-    <div style={{ width: "40%", margin: "200px 340px", height: "80vh" }}>
-      <h2 className="font-title mt-24 text-custom-color1">
+    <div
+      style={{
+        width: "40%",
+        margin: "200px 340px",
+        height: "90vh",
+      }}
+    >
+      <h2 className="font-title mt-32 text-custom-color1 text-[17px] pb-4">
         Event Registrations per month
       </h2>
-      <Bar data={data} options={options} />
+      <Bar
+        className="bg-foreground-color outline outline-outline-color rounded-md"
+        data={data}
+        options={options}
+      />
     </div>
   );
 };

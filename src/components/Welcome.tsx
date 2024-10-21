@@ -21,8 +21,8 @@ const Welcome = () => {
               <p className="font-semibold text-custom-color1 text-[20px] pt-3 pr-2">
                 100,000
               </p>
-              <BsArrowUpLeft className="text-[green] rotate-90" size={17} />
-              <span className="text-[green] text-[10px] pl-2">+5.0%</span>
+              <BsArrowUpLeft className="text-[#49db49] rotate-90" size={17} />
+              <span className="text-[#49db49] text-[10px] pl-2">+5.0%</span>
             </div>
           </div>
           <div className="inline-block mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
@@ -51,8 +51,8 @@ const Welcome = () => {
               <p className="font-semibold text-custom-color1 text-[20px] pt-3 pr-2">
                 300
               </p>
-              <BsArrowUpLeft className="text-[green] rotate-90" size={17} />
-              <span className="text-[green] text-[10px] pl-2">+5.0%</span>
+              <BsArrowUpLeft className="text-[#49db49] rotate-90" size={17} />
+              <span className="text-[#49db49] text-[10px] pl-2">+5.0%</span>
             </div>
           </div>
           <div className="inline-block mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
@@ -66,8 +66,8 @@ const Welcome = () => {
               <p className="font-semibold text-custom-color1 text-[20px] pt-3 pr-2">
                 $500,000
               </p>
-              <BsArrowUpLeft className="text-[green] rotate-90" size={17} />
-              <span className="text-[green] text-[10px] pl-2">+5.0%</span>
+              <BsArrowUpLeft className="text-[#49db49] rotate-90" size={17} />
+              <span className="text-[#49db49] text-[10px] pl-2">+5.0%</span>
             </div>
           </div>
         </div>
