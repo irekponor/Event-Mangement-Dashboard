@@ -72,7 +72,7 @@ const Sidenav = () => {
               <IoMdNotificationsOutline size={20} />
             </a>
             <h6 className="font-normal text-custom-color1">Notifications</h6>
-            <Badge size="w-[25px] h-[25px] ml-6" />
+            <Badge size="w-[25px] h-[25px] ml-7" />
           </div>
           <div className="flex items-center">
             <a
