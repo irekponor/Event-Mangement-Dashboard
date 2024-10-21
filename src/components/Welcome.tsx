@@ -10,7 +10,7 @@ const Welcome = () => {
           Welcome! here's your summary
         </h3>
         <div className="flex items-center">
-          <div className="inline-block mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-5">
+          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-5">
             <div className="flex items-center pl-3">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Total Events
@@ -25,7 +25,7 @@ const Welcome = () => {
               <span className="text-[#49db49] text-[10px] pl-2">+5.0%</span>
             </div>
           </div>
-          <div className="inline-block mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
+          <div className="inline-block mt-6 rounded-sm outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
             <div className="flex items-center  pl-3 m-0">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Active Speakers
@@ -40,7 +40,7 @@ const Welcome = () => {
               <span className="text-[red] text-[10px] pl-2">-5.0%</span>
             </div>
           </div>
-          <div className="inline-block mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
+          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
             <div className="flex items-center  pl-3 m-0">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Total Registration
@@ -55,7 +55,7 @@ const Welcome = () => {
               <span className="text-[#49db49] text-[10px] pl-2">+5.0%</span>
             </div>
           </div>
-          <div className="inline-block mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
+          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
             <div className="flex items-center  pl-3 m-0">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Total Revenue
