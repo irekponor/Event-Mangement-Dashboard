@@ -16,6 +16,7 @@
     --background-color: #ffffff;
     --foreground-color: #003cff;
     --primary-text-color: #4169e1;
+    --home-bg-color: #f0f0f0;
     --secondary-text-color: #000000;
     --toggle-bg: #d3d3d3;
     --toggle-fg: #ffffff;
@@ -25,6 +26,7 @@
     --background-color: #383544;
     --foreground-color: #485554;
     --primary-text-color: #ffffff;
+    --home-bg-color: #4169e1;
     --secondary-text-color: #ffffff;
     --toggle-bg: #4169e1;
     --toggle-fg: #ffffff;

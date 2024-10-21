@@ -8,6 +8,7 @@ export default {
         "custom-color": "var(--primary-text-color)",
         "custom-color1": "var(--secondary-text-color)",
         "custom-color2": "var(--background-color)",
+        "custom-color3": "var(--home-bg-color)",
       },
     },
   },
