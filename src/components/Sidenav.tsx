@@ -177,7 +177,7 @@ const Sidenav = () => {
               <button className="m-3 p-2 bg-red-500 shadow-lg text-white">
                 Delete
               </button>
-              <button className="m-3 p-2 ml-4 bg-[#6382dd] s  hadow-lg text-white">
+              <button className="m-3 p-2 ml-4 bg-[#6382dd] shadow-lg text-white">
                 Mark as completed
               </button>
             </div>
