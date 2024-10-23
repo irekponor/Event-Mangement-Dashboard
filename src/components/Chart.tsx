@@ -84,14 +84,8 @@ const options: ChartOptions<"bar"> = {
 
 const Chart: React.FC = () => {
   return (
-    <div
-      style={{
-        width: "38%",
-        margin: "200px 320px",
-        height: "90vh",
-      }}
-    >
-      <h2 className="font-title mt-32 text-custom-color1 text-[17px] pb-4">
+    <div className="xl:w-[38%] w-[90%] xl:m-[320px] m-[10px]">
+      <h2 className="font-title xl:mt-4 mt-96 pl-2 pt-44 text-custom-color1 text-[17px] pb-4 font-medium">
         Event Registrations per month
       </h2>
       <div>

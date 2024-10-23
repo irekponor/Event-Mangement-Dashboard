@@ -5,9 +5,9 @@ import img from "../assets/img.jfif";
 
 const Slide = () => {
   return (
-    <div className="absolute top-32 pl-96">
-      <div className="pl-24">
-        <Carousel className="max-w-[50%] top-36 left-96">
+    <div className="absolute xl:top-32 top-96 xl:pl-96">
+      <div className="xl:pl-24 xl:pt-0 pt-80">
+        <Carousel className="xl:max-w-[50%] max-w-[90%] top-36 xl:left-96 left-4">
           <Carousel.Item>
             <img
               src={Img1}
@@ -15,8 +15,8 @@ const Slide = () => {
               alt=""
             />
             <div>
-              <div className="absolute top-[170px] w-full">
-                <div className="max-w-[400px] pl-1 justify-center items-center flex-col">
+              <div className="absolute xl:top-[170px] top-[110px] w-full">
+                <div className="xl:max-w-[400px] pl-1 justify-center items-center flex-col">
                   <p className="pl-4 text-white font-medium font-title text-[15px] pt-10 mb-1">
                     Latest News & Updates
                   </p>
@@ -37,7 +37,7 @@ const Slide = () => {
               alt=""
             />
             <div>
-              <div className="absolute top-[170px] w-full">
+              <div className="absolute xl:top-[170px] top-[110px] w-full">
                 <div className="max-w-[400px] pl-1 justify-center items-center flex-col">
                   <p className="pl-4 text-white font-medium font-title text-[15px] pt-10 mb-1">
                     Latest News & Updates
@@ -59,7 +59,7 @@ const Slide = () => {
               alt=""
             />
             <div>
-              <div className="absolute top-[130px] w-full">
+              <div className="absolute top-[90px] w-full">
                 <div className="max-w-[400px] pl-1 justify-center items-center flex-col">
                   <p className="pl-4 text-white font-medium font-title text-[15px] pt-10 mb-1">
                     Latest News & Updates
