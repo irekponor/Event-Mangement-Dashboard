@@ -35,7 +35,7 @@ const Sidenav = () => {
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
       <div
-        className={`md:block hidden fixed top-0 shadow-lg bg-x transition-all duration-300 ${
+        className={`xl:block hidden fixed top-0 shadow-lg bg-x transition-all duration-300 ${
           isCollapsed ? "w-[70px]" : "w-[280px]"
         }`}
       >

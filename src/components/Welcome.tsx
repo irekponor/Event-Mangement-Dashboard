@@ -5,12 +5,12 @@ import { GoInfo } from "react-icons/go";
 const Welcome = () => {
   return (
     <div>
-      <div className="absolute top-0 left-[300px] font-title">
-        <h3 className="font-normal text-[24px] mt-11 text-custom-color1">
+      <div className="absolute xl:top-0 top-6 xl:left-[300px] left-[20px] font-title">
+        <h3 className="font-medium xl:text-[24px] text-[18px] mt-11 text-custom-color1">
           Welcome! here's your summary
         </h3>
-        <div className="flex items-center">
-          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-5">
+        <div className="xl:flex items-center">
+          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color xl:w-[241px] w-[300px] ml-5">
             <div className="flex items-center pl-3">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Total Events
@@ -25,7 +25,7 @@ const Welcome = () => {
               <span className="text-[#49db49] text-[10px] pl-2">+5.0%</span>
             </div>
           </div>
-          <div className="inline-block mt-6 rounded-sm outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
+          <div className="inline-block mt-6 rounded-sm outline outline-1 outline-outline-color bg-foreground-color xl:w-[241px] w-[300px] ml-4">
             <div className="flex items-center  pl-3 m-0">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Active Speakers
@@ -40,7 +40,7 @@ const Welcome = () => {
               <span className="text-[red] text-[10px] pl-2">-5.0%</span>
             </div>
           </div>
-          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
+          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color xl:w-[241px] w-[300px] ml-4">
             <div className="flex items-center  pl-3 m-0">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Total Registration
@@ -55,7 +55,7 @@ const Welcome = () => {
               <span className="text-[#49db49] text-[10px] pl-2">+5.0%</span>
             </div>
           </div>
-          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color w-[241px] ml-4">
+          <div className="inline-block rounded-sm mt-6 outline outline-1 outline-outline-color bg-foreground-color xl:w-[241px] w-[300px] ml-4">
             <div className="flex items-center  pl-3 m-0">
               <h5 className="font-medium text-custom-color6 pr-3 mb-0 pt-1">
                 Total Revenue
