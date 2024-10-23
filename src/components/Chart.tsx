@@ -86,7 +86,7 @@ const Chart: React.FC = () => {
   return (
     <div
       style={{
-        width: "34%",
+        width: "38%",
         margin: "200px 320px",
         height: "90vh",
       }}
@@ -94,11 +94,13 @@ const Chart: React.FC = () => {
       <h2 className="font-title mt-32 text-custom-color1 text-[17px] pb-4">
         Event Registrations per month
       </h2>
-      <Bar
-        className="bg-foreground-color outline outline-outline-color rounded-md"
-        data={data}
-        options={options}
-      />
+      <div>
+        <Bar
+          className="bg-foreground-color outline outline-outline-color rounded-md"
+          data={data}
+          options={options}
+        />
+      </div>
     </div>
   );
 };

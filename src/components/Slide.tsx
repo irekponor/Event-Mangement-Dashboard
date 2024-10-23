@@ -5,9 +5,9 @@ import img from "../assets/img.jfif";
 
 const Slide = () => {
   return (
-    <div className="absolute top-36 pl-96">
-      <div className="pl-8">
-        <Carousel className="max-w-[440px] top-32 left-96">
+    <div className="absolute top-32 pl-96">
+      <div className="pl-24">
+        <Carousel className="max-w-[50%] top-36 left-96">
           <Carousel.Item>
             <img
               src={Img1}
