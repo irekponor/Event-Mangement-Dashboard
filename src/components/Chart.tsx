@@ -86,8 +86,8 @@ const Chart: React.FC = () => {
   return (
     <div
       style={{
-        width: "40%",
-        margin: "200px 340px",
+        width: "34%",
+        margin: "200px 320px",
         height: "90vh",
       }}
     >

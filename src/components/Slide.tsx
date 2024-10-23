@@ -5,63 +5,77 @@ import img from "../assets/img.jfif";
 
 const Slide = () => {
   return (
-    <div className="pl-96">
-      <Carousel className="max-w-[530px] top-32 left-96">
-        <Carousel.Item>
-          <img src={Img1} className="object-cover rounded-lg" alt="" />
-          <div>
-            <div className="absolute top-[220px] w-full">
-              <div className="max-w-[450px] w-full h-full pl-1 justify-center items-center flex-col">
-                <p className="pl-7 text-white font-medium font-title text-[15px] pt-10 mb-4">
-                  Latest News & Updates
+    <div className="absolute top-36 pl-96">
+      <div className="pl-8">
+        <Carousel className="max-w-[440px] top-32 left-96">
+          <Carousel.Item>
+            <img
+              src={Img1}
+              className="object-cover rounded-lg w-full h-full"
+              alt=""
+            />
+            <div>
+              <div className="absolute top-[170px] w-full">
+                <div className="max-w-[400px] pl-1 justify-center items-center flex-col">
+                  <p className="pl-4 text-white font-medium font-title text-[15px] pt-10 mb-1">
+                    Latest News & Updates
+                  </p>
+                </div>
+                <p className="pl-4 text-white font-light font-title text-[13px]">
+                  Turpis interdum nunc varius ornare dignissim pretium. Massa
+                  ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                  Fringilla purus, erat fringilla tincidunt quisque non.
+                  Pellentesque in ut tellus.
                 </p>
               </div>
-              <p className="pl-7 text-white font-light font-title text-[13px]">
-                Turpis interdum nunc varius ornare dignissim pretium. Massa
-                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
-                Fringilla purus, erat fringilla tincidunt quisque non.
-                Pellentesque in ut tellus.
-              </p>
             </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={img2} className="object-cover rounded-lg" alt="" />
-          <div>
-            <div className="absolute top-[220px] w-full">
-              <div className="max-w-[450px] w-full h-full pl-1 justify-center items-center flex-col">
-                <p className="pl-7 text-white font-medium font-title text-[15px] pt-10 mb-4">
-                  Latest News & Updates
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src={img2}
+              className="object-cover rounded-lg w-full h-full"
+              alt=""
+            />
+            <div>
+              <div className="absolute top-[170px] w-full">
+                <div className="max-w-[400px] pl-1 justify-center items-center flex-col">
+                  <p className="pl-4 text-white font-medium font-title text-[15px] pt-10 mb-1">
+                    Latest News & Updates
+                  </p>
+                </div>
+                <p className="pl-4 text-white font-light font-title text-[13px]">
+                  Turpis interdum nunc varius ornare dignissim pretium. Massa
+                  ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                  Fringilla purus, erat fringilla tincidunt quisque non.
+                  Pellentesque in ut tellus.
                 </p>
               </div>
-              <p className="pl-7 text-white font-light font-title text-[13px]">
-                Turpis interdum nunc varius ornare dignissim pretium. Massa
-                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
-                Fringilla purus, erat fringilla tincidunt quisque non.
-                Pellentesque in ut tellus.
-              </p>
             </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img src={img} className="object-cover rounded-lg" alt="" />
-          <div>
-            <div className="absolute top-[170px] w-full">
-              <div className="max-w-[450px] w-full h-full pl-1 justify-center items-center flex-col">
-                <p className="pl-7 text-white font-medium font-title text-[15px] pt-10 mb-2">
-                  Latest News & Updates
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src={img}
+              className="object-cover rounded-lg w-full h-full"
+              alt=""
+            />
+            <div>
+              <div className="absolute top-[130px] w-full">
+                <div className="max-w-[400px] pl-1 justify-center items-center flex-col">
+                  <p className="pl-4 text-white font-medium font-title text-[15px] pt-10 mb-1">
+                    Latest News & Updates
+                  </p>
+                </div>
+                <p className="pl-4 text-white font-light font-title text-[13px]">
+                  Turpis interdum nunc varius ornare dignissim pretium. Massa
+                  ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
+                  Fringilla purus, erat fringilla tincidunt quisque non.
+                  Pellentesque in ut tellus.
                 </p>
               </div>
-              <p className="pl-7 text-white font-light font-title text-[13px]">
-                Turpis interdum nunc varius ornare dignissim pretium. Massa
-                ornare quis aliquet sed vitae. Sed velit nisi, fermentum erat.
-                Fringilla purus, erat fringilla tincidunt quisque non.
-                Pellentesque in ut tellus.
-              </p>
             </div>
-          </div>
-        </Carousel.Item>
-      </Carousel>
+          </Carousel.Item>
+        </Carousel>
+      </div>
     </div>
   );
 };

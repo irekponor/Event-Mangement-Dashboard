@@ -1,10 +1,10 @@
 import "./App.css";
-import Slide from "./components/Slide";
+import Sidenav from "./components/Sidenav";
 
 function App() {
   return (
     <div>
-      <Slide />
+      <Sidenav />
     </div>
   );
 }
