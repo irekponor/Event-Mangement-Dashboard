@@ -27,11 +27,12 @@ const Mobnav = () => {
   };
 
   return (
-    <div className="absolute top-0">
-      <button className="font-medium bg-[#87ceeb] ml-3 mb-4 p-2 mt-3 text-[#4169e1] block xl:hidden">
-        Full Logo
-      </button>
-      <div>
+    <div className="App" data-theme={isDark ? "dark" : "light"}>
+      <div className="absolute top-0">
+        <button className="font-medium bg-[#87ceeb] ml-3 mb-4 p-2 mt-3 text-[#4169e1] block xl:hidden">
+          Full Logo
+        </button>
+
         {nav ? (
           <div className="fixed top-0 left-0 w-full h-full bg-bg-color shadow-lg z-50 flex flex-col">
             <div className="flex justify-between items-center p-4">
@@ -41,7 +42,7 @@ const Mobnav = () => {
               <AiOutlineClose
                 size={20}
                 onClick={handleNav}
-                className="cursor-pointer"
+                className="cursor-pointer text-custom-color1"
               />
             </div>
 
@@ -50,7 +51,7 @@ const Mobnav = () => {
                 <a className="text-[#777] m-0 p-1 cursor-pointer hover:scale-125 ease-in duration-300">
                   <AiOutlineHome size={20} />
                 </a>
-                <span className="ml-2 font-title font-normal text-[20px]">
+                <span className="ml-2 font-title font-normal text-[20px] text-custom-color1">
                   Home
                 </span>
               </div>
@@ -58,7 +59,7 @@ const Mobnav = () => {
                 <a className="text-[#777] m-0 p-1 cursor-pointer hover:scale-125 ease-in duration-300">
                   <MdOutlineEventNote size={20} />
                 </a>
-                <span className="ml-2 font-title font-normal text-[20px]">
+                <span className="ml-2 font-title font-normal text-[20px] text-custom-color1">
                   Events
                 </span>
               </div>
@@ -66,7 +67,7 @@ const Mobnav = () => {
                 <a className="text-[#777] m-0 p-1 cursor-pointer hover:scale-125 ease-in duration-300">
                   <GiSpeaker size={20} />
                 </a>
-                <span className="ml-2 font-title font-normal text-[20px]">
+                <span className="ml-2 font-title font-normal text-[20px] text-custom-color1">
                   Speaker
                 </span>
               </div>
@@ -74,7 +75,7 @@ const Mobnav = () => {
                 <a className="text-[#777] m-0 p-1 cursor-pointer hover:scale-125 ease-in duration-300">
                   <TbReport size={20} />
                 </a>
-                <span className="ml-2 font-title font-normal text-[20px]">
+                <span className="ml-2 font-title font-normal text-[20px] text-custom-color1">
                   Report
                 </span>
               </div>
@@ -82,7 +83,7 @@ const Mobnav = () => {
                 <a className="text-[#777] m-0 p-1 cursor-pointer hover:scale-125 ease-in duration-300">
                   <IoMdNotificationsOutline size={20} />
                 </a>
-                <span className="ml-2 font-title font-normal text-[20px]">
+                <span className="ml-2 font-title font-normal text-[20px] text-custom-color1">
                   Notifications
                 </span>
                 <Badge size="w-[25px] h-[25px] ml-2" />
@@ -91,7 +92,7 @@ const Mobnav = () => {
                 <a className="text-[#777] m-0 p-1 cursor-pointer hover:scale-125 ease-in duration-300">
                   <IoChatbubblesOutline size={20} />
                 </a>
-                <span className="ml-2 font-title font-normal text-[20px]">
+                <span className="ml-2 font-title font-normal text-[20px] text-custom-color1">
                   Messages
                 </span>
               </div>
@@ -99,7 +100,7 @@ const Mobnav = () => {
                 <a className="text-[#777] m-0 p-1 cursor-pointer hover:scale-125 ease-in duration-300">
                   <CiSettings size={20} />
                 </a>
-                <span className="ml-2 font-title font-normal text-[20px]">
+                <span className="ml-2 font-title font-normal text-[20px] text-custom-color1">
                   Settings
                 </span>
               </div>
@@ -112,7 +113,7 @@ const Mobnav = () => {
                   <FaCircleUser size={30} />
                 </a>
                 <div className="inline-block">
-                  <h6 className="font-title font-normal text-[20px]">
+                  <h6 className="font-title font-normal text-[20px] text-custom-color1">
                     Rudra Devi
                   </h6>
                   <h6 className="text-gray-500">rudra.devi@gmail.com</h6>
@@ -124,7 +125,7 @@ const Mobnav = () => {
           <AiOutlineMenu
             size={20}
             onClick={handleNav}
-            className="absolute left-[330px] top-6 z-[99] xl:hidden cursor-pointer"
+            className="absolute left-[330px] top-6 z-[99] xl:hidden cursor-pointer text-custom-color1"
           />
         )}
 
@@ -133,7 +134,10 @@ const Mobnav = () => {
           <div className="fixed top-16 left-1/4 w-3/4 bg-custom-color2 p-4 shadow-lg rounded-lg z-50">
             <div className="flex justify-between items-center">
               <h3 className="text-custom-color1">Event Name</h3>
-              <LiaTimesSolid onClick={togglePopup} className="cursor-pointer" />
+              <LiaTimesSolid
+                onClick={togglePopup}
+                className="cursor-pointer text-custom-color1"
+              />
             </div>
             <p className="font-normal text-custom-color1">Event Date</p>
             <p className="font-normal text-custom-color1 mb-8">

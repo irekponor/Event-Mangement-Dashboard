@@ -40,3 +40,11 @@
 .toggle:checked + label::after{
     transform: translateX(100%);
 }
+
+/*responsive view */
+@media (max-width: 1280px) {
+
+    .toggle-container {
+     bottom: 5.5rem;
+    }
+  }
