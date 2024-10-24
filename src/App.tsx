@@ -1,10 +1,12 @@
 import "./App.css";
-import History from "./components/History";
+import Sidenav from "./components/Sidenav";
+import Slide from "./components/Slide";
 
 function App() {
   return (
     <div>
-      <History />
+      <Slide />
+      <Sidenav />
     </div>
   );
 }
