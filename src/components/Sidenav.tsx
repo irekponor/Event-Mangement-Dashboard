@@ -17,7 +17,6 @@ import { TbReport } from "react-icons/tb";
 import Welcome from "./Welcome";
 import Chart from "./Chart";
 import Mobnav from "./Mobnav";
-import Table from "./Table";
 
 const Sidenav = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -188,7 +187,6 @@ const Sidenav = () => {
       )}
       <Welcome />
       <Chart />
-      <Table />
       <Mobnav />
     </div>
   );
