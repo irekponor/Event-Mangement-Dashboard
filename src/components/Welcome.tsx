@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <div>
       <div className="absolute xl:top-0 top-6 xl:left-[300px] left-[20px] font-title">
-        <h3 className="font-medium xl:text-[24px] text-[18px] mt-11 text-custom-color1">
+        <h3 className="font-semibold xl:text-[24px] text-[18px] mt-11 text-custom-color1">
           Welcome! here's your summary
         </h3>
         <div className="xl:flex items-center">
