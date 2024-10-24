@@ -7,7 +7,7 @@ const Slide = () => {
   return (
     <div className="absolute xl:top-32 top-96 xl:pl-96">
       <div className="xl:pl-24 xl:pt-0 pt-96">
-        <Carousel className="xl:max-w-[50%] max-w-[90%] xl:top-36 top-96 xl:left-96 left-4">
+        <Carousel className="xl:max-w-[50%] max-w-[90%] xl:top-36 top-24 xl:left-96 left-4">
           <Carousel.Item>
             <img
               src={Img1}

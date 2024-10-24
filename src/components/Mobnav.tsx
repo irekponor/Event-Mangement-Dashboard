@@ -31,7 +31,7 @@ const Mobnav = () => {
       <button className="font-medium bg-[#87ceeb] ml-3 mb-4 p-2 mt-3 text-[#4169e1] block xl:hidden">
         Full Logo
       </button>
-      <div className="App" data-theme={isDark ? "dark" : "light"}>
+      <div>
         {nav ? (
           <div className="fixed top-0 left-0 w-full h-full bg-bg-color shadow-lg z-50 flex flex-col">
             <div className="flex justify-between items-center p-4">
