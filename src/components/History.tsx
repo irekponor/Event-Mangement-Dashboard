@@ -19,30 +19,40 @@ const History = () => {
           size={14}
         />
         <button className="xl:m-3 mt-2 p-2 outline outline-1 outline-outline-color xl:w-[90px] w-[260px] text-black flex items-start">
-          <span className="xl:pl-2 pl-[83px] text-[#777]">Date</span>
+          <span className="xl:pl-2 pl-[83px] text-[#777] text-custom-color6">
+            Date
+          </span>
           <i className="pl-3 pt-1">
             <MdKeyboardArrowDown />
           </i>
         </button>
         <button className="xl:m-2 mt-2 p-2 outline outline-1 outline-outline-color xl:w-[90px] w-[260px]  text-black flex items-start">
-          <span className="xl:pl-2 pl-20 text-[#777]">Status</span>
+          <span className="xl:pl-2 pl-20 text-[#777] text-custom-color6">
+            Status
+          </span>
           <i className="pl-3 pt-1">
             <MdKeyboardArrowDown />
           </i>
         </button>
         <button className="xl:m-2 mt-2 p-2 outline outline-1 outline-outline-color xl:w-[90px] w-[260px]  text-black flex items-start">
-          <span className="xl:pl-2 pl-20 text-[#777]">Name</span>
+          <span className="xl:pl-2 pl-20 text-[#777] text-custom-color6">
+            Name
+          </span>
           <i className="pl-3 pt-1">
             <MdKeyboardArrowDown />
           </i>
         </button>
-        <p className="font-medium pt-3">Displaying 100 results</p>
-        <p className="font-normal xl:pl-9 pt-3">Sort:</p>
+        <p className="font-medium pt-3 text-custom-color1">
+          Displaying 100 results
+        </p>
+        <p className="font-normal xl:pl-9 pt-3 text-custom-color1">Sort:</p>
         <button
           className="xl:ml-2 ml-28 p-2 outline outline-1 outline-outline-color text-black flex 
         items-start xl:-translate-y-0 -translate-y-11"
         >
-          <span className="pl-2 text-[#777]">Most Recent</span>
+          <span className="pl-2 text-[#777] text-custom-color6">
+            Most Recent
+          </span>
           <i className="pl-3 pt-1">
             <MdKeyboardArrowDown />
           </i>
@@ -57,7 +67,9 @@ const History = () => {
           <i className="pt-1">
             <LuDownload />
           </i>
-          <span className="xl:pl-2 pl-4 text-[#777]">Export</span>
+          <span className="xl:pl-2 pl-4 text-[#777] text-custom-color6">
+            Export
+          </span>
         </button>
       </div>
     </div>
