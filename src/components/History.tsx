@@ -4,7 +4,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const History = () => {
   return (
-    <div className="absolute xl:top-[630px] top-[1100px] xl:left-[290px] left-6">
+    <div className="absolute xl:top-[630px] top-[1030px] xl:left-[290px] left-6">
       <h3 className="font-semibold text-[18px] text-custom-color1 mt-14 xl:ml-8">
         Events History
       </h3>
