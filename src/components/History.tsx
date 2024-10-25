@@ -4,13 +4,13 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const History = () => {
   return (
-    <div className="absolute xl:top-[630px] top-[1100px] xl:left-[280px] left-6">
+    <div className="absolute xl:top-[630px] top-[1100px] xl:left-[290px] left-6">
       <h3 className="font-semibold text-[18px] text-custom-color1 mt-14 xl:ml-8">
         Events History
       </h3>
       <div className="w-full max-w-[1060px] xl:flex items-center left-4 font-title">
         <input
-          className="text-[#eeeeee] outline outline-1 outline-outline-color border-none px-10 py-2 xl:w-[200px] w-[320px] h-8"
+          className="text-[#eeeeee] outline outline-1 outline-outline-color bg-foreground-color border-none px-10 py-2 xl:w-[200px] w-[320px] h-8"
           type="text"
           placeholder="Search..."
         />
@@ -19,7 +19,7 @@ const History = () => {
           size={14}
         />
         <button
-          className="xl:m-3 mt-2 p-2 outline outline-1 outline-outline-color xl:w-[90px] w-[320px]
+          className="xl:m-3 mt-2 p-2 outline outline-1 outline-outline-color bg-foreground-color xl:w-[90px] w-[320px]
          text-black flex items-start"
         >
           <span className="xl:pl-2 pl-[117px] text-[#777] text-custom-color6">
@@ -29,7 +29,7 @@ const History = () => {
             <MdKeyboardArrowDown />
           </i>
         </button>
-        <button className="xl:m-2 mt-2 p-2 outline outline-1 outline-outline-color xl:w-[90px] w-[320px]  text-black flex items-start">
+        <button className="xl:m-2 mt-2 p-2 outline outline-1 outline-outline-color bg-foreground-color xl:w-[90px] w-[320px]  text-black flex items-start">
           <span className="xl:pl-2 pl-28 text-[#777] text-custom-color6">
             Status
           </span>
@@ -37,7 +37,7 @@ const History = () => {
             <MdKeyboardArrowDown />
           </i>
         </button>
-        <button className="xl:m-2 mt-2 p-2 outline outline-1 outline-outline-color xl:w-[90px] w-[320px]  text-black flex items-start">
+        <button className="xl:m-2 mt-2 p-2 outline outline-1 outline-outline-color bg-foreground-color xl:w-[90px] w-[320px]  text-black flex items-start">
           <span className="xl:pl-2 pl-28 text-[#777] text-custom-color6">
             Name
           </span>
@@ -50,7 +50,7 @@ const History = () => {
         </p>
         <p className="font-normal xl:pl-9 pt-3 text-custom-color1">Sort:</p>
         <button
-          className="xl:ml-2 ml-44 p-2 outline outline-1 outline-outline-color text-black flex 
+          className="xl:ml-2 ml-44 p-2 outline outline-1 outline-outline-color bg-foreground-color text-black flex 
         items-start xl:-translate-y-0 -translate-y-11"
         >
           <span className="pl-2 text-[#777] text-custom-color6">
@@ -60,11 +60,11 @@ const History = () => {
             <MdKeyboardArrowDown />
           </i>
         </button>
-        <button className="ml-2 p-2 outline outline-1 outline-outline-color text-black flex items-start">
+        <button className="ml-2 p-2 outline outline-1 outline-outline-color bg-foreground-color text-black flex items-start">
           <span className="text-[#777]">:</span>
         </button>
         <button
-          className="xl:ml-2 ml-[220px] p-2 outline outline-1 outline-outline-color text-black
+          className="xl:ml-2 ml-[220px] p-2 outline outline-1 outline-outline-color bg-foreground-color text-black
          flex items-start xl:-translate-y-0 -translate-y-11"
         >
           <i className="pt-1">
