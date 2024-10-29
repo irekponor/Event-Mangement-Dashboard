@@ -1,12 +1,21 @@
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 
+// Defining an interface to make up for the any type implicity of typescript
+interface Event {
+  id: number;
+  name: string;
+  date: string;
+  speaker: string;
+  status: JSX.Element | string; // you can make ur status a JSX element or a string
+}
+
 const Eventstable = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   // Function to update isMobile based on window width
   const handleResize = () => {
-    setIsMobile(window.innerWidth < 1280); // using 1280px as the breakpoint for mobile
+    setIsMobile(window.innerWidth < 1280); // Using 1280px as the breakpoint for mobile
   };
 
   useEffect(() => {
@@ -15,6 +24,7 @@ const Eventstable = () => {
     return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
   }, []);
 
+  // Defining columns with explicit typing
   const columns = isMobile
     ? [
         {
@@ -23,9 +33,9 @@ const Eventstable = () => {
               Event Name
             </span>
           ),
-          selector: (row) => row.name,
+          selector: (row: Event) => row.name,
           sortable: true,
-          cell: (row) => (
+          cell: (row: Event) => (
             <span className="font-title text-[14px] text-custom-color1">
               {row.name}
             </span>
@@ -37,34 +47,38 @@ const Eventstable = () => {
               Status
             </span>
           ),
-          selector: (row) => row.status,
+          selector: (row: Event) =>
+            typeof row.status === "string" ? row.status : "Status", // Safe type check
           sortable: true,
+          cell: (row: Event) => row.status, // Rendering JSX element directly
         },
       ]
     : [
         {
           name: "Event Name",
-          selector: (row) => row.name,
+          selector: (row: Event) => row.name,
           sortable: true,
         },
         {
           name: "Date",
-          selector: (row) => row.date,
+          selector: (row: Event) => row.date,
           sortable: true,
         },
         {
           name: "Speaker",
-          selector: (row) => row.speaker,
+          selector: (row: Event) => row.speaker,
           sortable: true,
         },
         {
           name: "Status",
-          selector: (row) => row.status,
+          selector: (row: Event) =>
+            typeof row.status === "string" ? row.status : "Status", // Safe type check
           sortable: true,
+          cell: (row: Event) => row.status, // Rendering JSX element directly
         },
       ];
 
-  const data = [
+  const data: Event[] = [
     {
       id: 1,
       name: "Cloud Innovation Summit",
