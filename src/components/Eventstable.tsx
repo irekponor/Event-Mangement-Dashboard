@@ -213,7 +213,7 @@ const Eventstable = () => {
   };
 
   return (
-    <div className="absolute xl:top-[780px] top-[1030px] xl:left-[290px] left-6 w-[1043px] ">
+    <div className="absolute xl:top-[780px] top-[1510px] xl:left-[290px] xl:w-[1043px]">
       <DataTable
         columns={columns}
         data={data}

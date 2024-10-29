@@ -2,7 +2,7 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="flex items-center font-title xl:pt-[720px] max-xl:pt-4">
+    <div className="flex items-center font-title xl:pt-[720px] max-xl:pt-[710px]">
       <button className="m-2 p-2 rounded-sm outline outline-1 outline-outline-color bg-foreground-color text-black flex items-start">
         <i className="text-custom-color1">
           <MdKeyboardArrowDown className="-rotate-[270deg]" />
