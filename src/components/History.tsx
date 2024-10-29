@@ -25,7 +25,7 @@ const History = () => {
           <span className="xl:pl-2 pl-[117px] text-[#777] text-custom-color6">
             Date
           </span>
-          <i className="pl-3 pt-1">
+          <i className="pl-3 pt-1 text-custom-color1">
             <MdKeyboardArrowDown />
           </i>
         </button>
@@ -33,7 +33,7 @@ const History = () => {
           <span className="xl:pl-2 pl-28 text-[#777] text-custom-color6">
             Status
           </span>
-          <i className="pl-3 pt-1">
+          <i className="pl-3 pt-1 text-custom-color1">
             <MdKeyboardArrowDown />
           </i>
         </button>
@@ -41,7 +41,7 @@ const History = () => {
           <span className="xl:pl-2 pl-28 text-[#777] text-custom-color6">
             Name
           </span>
-          <i className="pl-3 pt-1">
+          <i className="pl-3 pt-1 text-custom-color1">
             <MdKeyboardArrowDown />
           </i>
         </button>
@@ -56,18 +56,18 @@ const History = () => {
           <span className="pl-2 text-[#777] text-custom-color6">
             Most Recent
           </span>
-          <i className="pl-3 pt-1">
+          <i className="pl-3 pt-1 text-custom-color1">
             <MdKeyboardArrowDown />
           </i>
         </button>
         <button className="ml-2 p-2 outline outline-1 outline-outline-color bg-foreground-color text-black flex items-start">
-          <span className="text-[#777]">:</span>
+          <span className="text-[#777] text-custom-color1">:</span>
         </button>
         <button
           className="xl:ml-2 ml-[220px] p-2 outline outline-1 outline-outline-color bg-foreground-color text-black
          flex items-start xl:-translate-y-0 -translate-y-11"
         >
-          <i className="pt-1">
+          <i className="pt-1 text-custom-color1">
             <LuDownload />
           </i>
           <span className="xl:pl-2 pl-4 text-[#777] text-custom-color6">
