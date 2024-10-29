@@ -1,28 +1,69 @@
+import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 
 const Eventstable = () => {
-  const columns = [
-    {
-      name: "Event Name",
-      selector: (row) => row.name,
-      sortable: true,
-    },
-    {
-      name: "Date",
-      selector: (row) => row.date,
-      sortable: true,
-    },
-    {
-      name: "Speaker",
-      selector: (row) => row.speaker,
-      sortable: true,
-    },
-    {
-      name: "Status",
-      selector: (row) => row.status,
-      sortable: true,
-    },
-  ];
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Function to update isMobile based on window width
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 1280); // Set 1280px as the breakpoint for mobile
+  };
+
+  useEffect(() => {
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize); // Add event listener
+    return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
+  }, []);
+
+  const columns = isMobile
+    ? [
+        {
+          name: (
+            <span className="font-title text-[14px] text-custom-color1">
+              Event Name
+            </span>
+          ),
+          selector: (row) => row.name,
+          sortable: true,
+          cell: (row) => (
+            <span className="font-title text-[14px] text-custom-color1">
+              {row.name}
+            </span>
+          ),
+        },
+        {
+          name: (
+            <span className="font-title text-[14px] text-custom-color1">
+              Status
+            </span>
+          ),
+          selector: (row) => row.status,
+          sortable: true,
+        },
+      ]
+    : [
+        {
+          name: "Event Name",
+          selector: (row) => row.name,
+          sortable: true,
+        },
+        {
+          name: "Date",
+          selector: (row) => row.date,
+          sortable: true,
+        },
+        {
+          name: "Speaker",
+          selector: (row) => row.speaker,
+          sortable: true,
+        },
+        {
+          name: "Status",
+          selector: (row) => row.status,
+          sortable: true,
+        },
+      ];
+
   const data = [
     {
       id: 1,
@@ -31,8 +72,8 @@ const Eventstable = () => {
       speaker: "Jane Doe",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-green-400 outline outline-1 outline-green-400 p-2 w-20 rounded-full">
-            completed
+          <button className="xl:text-green-400 max-xl:text-white max-xl:bg-green-500 xl:outline outline-1 outline-green-400 p-2 w-20 rounded-full">
+            Completed
           </button>
         </div>
       ),
@@ -44,7 +85,7 @@ const Eventstable = () => {
       speaker: "Dr. Peter Smith",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-blue-400 outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
+          <button className="xl:text-blue-400 max-xl:text-white max-xl:bg-blue-500 xl:outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
             In Progress
           </button>
         </div>
@@ -57,8 +98,8 @@ const Eventstable = () => {
       speaker: "Dr. Aisha Malik",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-green-400 outline outline-1 outline-green-400 p-2 w-20 rounded-full">
-            completed
+          <button className="xl:text-green-400 max-xl:text-white max-xl:bg-green-500 xl:outline outline-1 outline-green-400 p-2 w-20 rounded-full">
+            Completed
           </button>
         </div>
       ),
@@ -70,8 +111,8 @@ const Eventstable = () => {
       speaker: "John Lee",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-green-400 outline outline-1 outline-green-400 p-2 w-20 rounded-full">
-            completed
+          <button className="xl:text-green-400 max-xl:text-white max-xl:bg-green-500 xl:outline outline-1 outline-green-400 p-2 w-20 rounded-full">
+            Completed
           </button>
         </div>
       ),
@@ -83,8 +124,8 @@ const Eventstable = () => {
       speaker: "Rachel Moore",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-green-400 outline outline-1 outline-green-400 p-2 w-20 rounded-full">
-            completed
+          <button className="xl:text-green-400 max-xl:text-white max-xl:bg-green-500 xl:outline outline-1 outline-green-400 p-2 w-20 rounded-full">
+            Completed
           </button>
         </div>
       ),
@@ -96,8 +137,8 @@ const Eventstable = () => {
       speaker: "Prof. Alan Green",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-green-400 outline outline-1 outline-green-400 p-2 w-20 rounded-full">
-            completed
+          <button className="xl:text-green-400 max-xl:text-white max-xl:bg-green-500 xl:outline outline-1 outline-green-400 p-2 w-20 rounded-full">
+            Completed
           </button>
         </div>
       ),
@@ -109,7 +150,7 @@ const Eventstable = () => {
       speaker: "Kevin Adams",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-blue-400 outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
+          <button className="xl:text-blue-400 max-xl:text-white max-xl:bg-blue-500 xl:outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
             In Progress
           </button>
         </div>
@@ -122,8 +163,8 @@ const Eventstable = () => {
       speaker: "Emily Zhang",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-green-400 outline outline-1 outline-green-400 p-2 w-20 rounded-full">
-            completed
+          <button className="xl:text-green-400 max-xl:text-white max-xl:bg-green-500 xl:outline outline-1 outline-green-400 p-2 w-20 rounded-full">
+            Completed
           </button>
         </div>
       ),
@@ -135,7 +176,7 @@ const Eventstable = () => {
       speaker: "Dr. Maria Hernandez",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-blue-400 outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
+          <button className="xl:text-blue-400 max-xl:text-white max-xl:bg-blue-500 xl:outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
             In Progress
           </button>
         </div>
@@ -148,13 +189,14 @@ const Eventstable = () => {
       speaker: "Guest Panel",
       status: (
         <div className="pt-3 pb-3">
-          <button className="text-blue-400 outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
+          <button className="xl:text-blue-400 max-xl:text-white max-xl:bg-blue-500 xl:outline outline-1 outline-blue-400 p-2 w-20 rounded-full">
             In Progress
           </button>
         </div>
       ),
     },
   ];
+
   const customStyles = {
     rows: {
       style: {
@@ -171,12 +213,13 @@ const Eventstable = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <DataTable
         columns={columns}
         data={data}
         customStyles={customStyles}
-      ></DataTable>
+        responsive // Enable responsive behavior
+      />
     </div>
   );
 };
