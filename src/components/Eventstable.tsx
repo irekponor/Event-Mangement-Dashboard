@@ -143,7 +143,7 @@ const Eventstable = () => {
     },
     {
       id: 10,
-      name: "Texh Safari Mixer",
+      name: "Tech Safari Mixer",
       date: "2024-09-30",
       speaker: "Guest Panel",
       status: (
@@ -159,12 +159,13 @@ const Eventstable = () => {
     rows: {
       style: {
         backgroundColor: "var(--foreground-color)",
+        color: "var(--secondary-text-color)",
       },
     },
     headCells: {
       style: {
         backgroundColor: "var(--table-color)",
-        color: "white",
+        color: "var(--main-color)",
       },
     },
   };
