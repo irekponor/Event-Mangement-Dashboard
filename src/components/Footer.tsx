@@ -2,27 +2,27 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="flex items-center font-title max-xl:pt-4">
+    <div className="flex items-center font-title xl:pt-[720px] max-xl:pt-4">
       <button className="m-2 p-2 rounded-sm outline outline-1 outline-outline-color bg-foreground-color text-black flex items-start">
         <i className="text-custom-color1">
           <MdKeyboardArrowDown className="-rotate-[270deg]" />
         </i>
       </button>
-      <button className="m-2 w-7 h-7 rounded-full bg-blue-400 text-black flex items-start">
+      <button className="xl:m-2 m-1 w-7 h-7 rounded-full bg-blue-400 text-black flex items-start">
         <span className="pl-[9.4px] pt-[2px] text-custom-color1">1</span>
       </button>
-      <button className="m-2 p-2 text-black flex items-start">
+      <button className="xl:m-2 m-1 p-2 text-black flex items-start">
         <span className="text-custom-color1">2</span>
       </button>
-      <button className="m-2 p-2 text-black flex items-start">
+      <button className="xl:m-2 m-1 p-2 text-black flex items-start">
         <span className="text-custom-color1">3</span>
       </button>
-      <button className="m-2 p-2 rounded-sm outline outline-1 outline-outline-color bg-foreground-color text-black flex items-start">
+      <button className="xl:m-2 m-[12px] p-2 rounded-sm outline outline-1 outline-outline-color bg-foreground-color text-black flex items-start">
         <i className="text-custom-color1">
           <MdKeyboardArrowDown className="-rotate-[90deg]" />
         </i>
       </button>
-      <p className="max-xl:hidden font-normal xl:pl-96 xl:ml-[270px] pl-2 pt-3 text-custom-color1 text-[15px]">
+      <p className="max-xl:hidden font-normal xl:pl-96 xl:ml-[294px] pl-2 pt-3 text-custom-color1 text-[15px]">
         Show:
       </p>
       <button

@@ -18,6 +18,7 @@ import Welcome from "./Welcome";
 import Chart from "./Chart";
 import Mobnav from "./Mobnav";
 import History from "./History";
+import Eventstable from "./Eventstable";
 
 const Sidenav = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
@@ -189,6 +190,7 @@ const Sidenav = () => {
       <Welcome />
       <Chart />
       <History />
+      <Eventstable />
       <Mobnav />
     </div>
   );
