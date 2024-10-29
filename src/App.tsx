@@ -1,12 +1,10 @@
 import "./App.css";
-import Sidenav from "./components/Sidenav";
-import Slide from "./components/Slide";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <Slide />
-      <Sidenav />
+      <Footer />
     </div>
   );
 }

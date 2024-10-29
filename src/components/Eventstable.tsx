@@ -6,12 +6,12 @@ const Eventstable = () => {
 
   // Function to update isMobile based on window width
   const handleResize = () => {
-    setIsMobile(window.innerWidth < 1280); // Set 1280px as the breakpoint for mobile
+    setIsMobile(window.innerWidth < 1280); // using 1280px as the breakpoint for mobile
   };
 
   useEffect(() => {
     handleResize(); // Set initial value
-    window.addEventListener("resize", handleResize); // Add event listener
+    window.addEventListener("resize", handleResize); // Adding an event listener
     return () => window.removeEventListener("resize", handleResize); // Cleanup on unmount
   }, []);
 
