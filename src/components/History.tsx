@@ -2,6 +2,7 @@ import { BsSearch } from "react-icons/bs";
 import { LuDownload } from "react-icons/lu";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Eventstable from "./Eventstable";
+import Footer from "./Footer";
 
 const History = () => {
   return (
@@ -77,6 +78,7 @@ const History = () => {
         </button>
       </div>
       <Eventstable />
+      <Footer />
     </div>
   );
 };
