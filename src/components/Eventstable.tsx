@@ -155,9 +155,27 @@ const Eventstable = () => {
       ),
     },
   ];
+  const customStyles = {
+    rows: {
+      style: {
+        backgroundColor: "var(--foreground-color)",
+      },
+    },
+    headCells: {
+      style: {
+        backgroundColor: "var(--table-color)",
+        color: "white",
+      },
+    },
+  };
+
   return (
-    <div className="m-8">
-      <DataTable columns={columns} data={data}></DataTable>
+    <div className="">
+      <DataTable
+        columns={columns}
+        data={data}
+        customStyles={customStyles}
+      ></DataTable>
     </div>
   );
 };
